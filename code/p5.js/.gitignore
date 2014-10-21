@@ -1,0 +1,6 @@
+*.DS_STORE
+node_modules/*
+experiments/*
+lib_old/*
+docs/reference/*
+docs/yuidoc-p5-theme/assets/js/reference.js*

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Description" content="Works by programmer and artist, Gene Kogan" />
+	<meta name="author" content="Gene Kogan">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.genekogan.com/rss/rss2.xml" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="name">
+				<h1>Gene Kogan</h1>
+			</div>
+			<div id="menucontainer">
+				<div id="menudiv">
+					<ul id="menu">
+						<li><a href="/" class="current">Works</a></li>
+						<li><a href="/experiments/" >Experiments</a></li>
+						<li><a href="/blog/" >Blog</a></li>
+						<li><a href="/about.html" >About</a></li>
+						<li><a href="/rss/rss2.xml" ><img src="/images/misc/rss.jpg" alt="RSS" /></a></li>
+					</ul>
+				</div>
+				<div id="socialdiv">
+					<ul id="social">
+						<li><a href="http://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
+						<li><a href="http://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
+						<li><a href="http://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
+						<li><a href="http://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
+						<li><a href="http://www.openprocessing.org/user/19808"><img src="/images/misc/icon_openprocessing.png" alt="OpenProcessing" /></a></li>
+						<li><a href="http://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			
+			<div id="worksbanner">
+			
+				<div class="worksitem tott">
+					<a href="works/tip-of-the-tongue.html">
+					<img src="/images/works/tip-of-the-tongue.jpg" />
+					<div class="caption">
+						Tip of the Tongue
+					</div></a>
+				</div>
+				<p/>
+				<div class="worksitem atk">
+					<a href="works/along-the-karakoram.html">
+					<img src="/images/works/along-the-karakoram.jpg" />
+					<div class="caption">
+						Along the Karakoram
+					</div></a>
+				</div>	
+				<p/>
+				<div class="worksitem tr">
+					<a href="works/the-rub.html">
+					<img src="/images/works/the-rub.jpg" />
+					<div class="caption">
+						The Rub
+					</div></a>
+				</div>	
+				<p/>
+				<div class="worksitem m">
+					<a href="works/mosaic.html">
+					<img src="/images/works/mosaic.jpg" />
+					<div class="caption">
+						Mosaic
+					</div></a>
+				</div>	
+			
+				<script type="text/javascript">	
+					$(document).ready(function() {
+					    $('.worksitem').hover(function() {
+					        $(this).find('div.caption').stop(false,true).fadeIn(200);
+					    },
+					    function() {
+					        $(this).find('div.caption').stop(false,true).fadeOut(200);
+					    });
+					});
+				</script>
+			
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

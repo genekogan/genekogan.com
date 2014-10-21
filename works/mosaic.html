@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Description" content="Automatic rendering of photo mosaics" />
+	<meta name="author" content="Gene Kogan">
+	<title>Mosaic | Gene Kogan</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.genekogan.com/rss/rss2.xml" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/lightbox.css" rel="stylesheet" />
+	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="/js/lightbox.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="name">
+				<h1>Gene Kogan</h1>
+			</div>
+			<div id="menucontainer">
+				<div id="menudiv">
+					<ul id="menu">
+						<li><a href="/" >Works</a></li>
+						<li><a href="/about.html" >About</a></li>
+						<li><a href="/rss/rss2.xml" ><img src="/images/misc/rss.jpg" alt="RSS" /></a></li>
+					</ul>
+				</div>
+				<div id="socialdiv">
+					<ul id="social">
+						<li><a href="http://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+						<li><a href="http://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
+						<li><a href="http://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
+						<li><a href="http://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
+						<li><a href="http://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			
+			<p>
+				Mosaic is a program that facilitates the creation of the classic <a href="http://en.wikipedia.org/wiki/Photographic_mosaic">photo mosaic</a>, a large composition of many small photographs stitched together in such a way as to resemble a single target photograph.
+			</p>
+			<p>
+				The software was written in Matlab and is designed to take as input a large collection of images, and a single "target image", i.e. the photo which the mosaic should model. It works by dividing the target into a grid, and then fitting individual photographs into each "pixel" within the grid, so as to maximize the overall color similarity between source and target, using an <a href="http://www.cs.huji.ac.il/~ofirpele/FastEMD/code/">implementation</a> of <a href="http://en.wikipedia.org/wiki/Earth_mover's_distance">Earth Mover's distance</a>.
+			</p>
+			<p>
+				The full code for this project is <a href="https://github.com/genekogan/Auto-Photo-Mosaic">available on GitHub</a>, though requires Matlab to use it. Someday when I get around to it, I will make a version in a free language like Python.
+			</p>
+			<center>
+			<p>
+				<a href="/images/mosaic/target-antigua.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_target-antigua.jpg" /></a>
+				<a href="/images/mosaic/mosaic-antigua.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_mosaic-antigua.jpg" /></a>
+			</p>
+			<p>
+				<a href="/images/mosaic/target-rosieondeck.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_target-rosieondeck.jpg" /></a>
+				<a href="/images/mosaic/mosaic-rosieondeck.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_mosaic-rosieondeck.jpg" /></a>
+			</p>
+			<p>
+				<a href="/images/mosaic/target-dilnora.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_target-dilnora.jpg" /></a>
+				<a href="/images/mosaic/mosaic-dilnora.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_mosaic-dilnora.jpg" /></a>
+			</p>
+			</center>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-33352395-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>
