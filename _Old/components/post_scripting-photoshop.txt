@@ -1,0 +1,52 @@
+<!title>Scripting Photoshop</!title>
+<!date>Mon, 25 Apr 2011 11:00:00 -0500</!date>
+<!type>works</!type>
+<!description>Abstract textures from scripting Photoshop filters</!description>
+<!include>jquery</!include>
+<!include>lightbox</!include>
+
+<p>
+	A project combining Photoshop's abundance of preset filters and blending strategies with its handy and little-known scripting capabilities. To generate these, I first collected a set of textures via Google image search to use as source images. I then wrote a script which automated the following procedure:
+</p>
+<p>
+	<ul>
+		<li>Select five textures at random</li>
+		<li>Apply one of Photoshop's filters to each texture, selecting the filter and its parameters randomly.</li>
+		<li>Apply an alpha mask along a contour created by clicking the magic wand tool somewhere on the texture, giving the texture some transparency.</li>
+		<li>Blend the five warped textures together into a single image, using five randomly chosen blending modes.</li>
+	</ul>
+</p>
+<p>
+	Here is a gallery of some of the results.
+</p>
+
+<p>
+	<a href="../images/scripting-photoshop/pic0.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic0.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic2.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic2.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic3.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic3.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic14.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic14.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic19.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic19.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic26.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic26.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic52.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic52.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic76.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic76.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic96.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic96.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic97a.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic97a.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic143.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic143.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic164.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic164.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic196.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic196.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic200.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic200.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic232.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic232.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic254.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic254.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic276.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic276.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic317.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic317.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic338.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic338.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic343.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic343.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic490.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic490.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic507a.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic507a.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic533.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic533.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic588.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic588.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic789.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic789.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic956.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic956.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic972.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic972.jpg" /></a>
+	<a href="../images/scripting-photoshop/pic983.jpg" rel="lightbox[ps]"><img src="../images/scripting-photoshop/thumb_pic983.jpg" /></a>
+</p>

@@ -1,0 +1,30 @@
+<!title>Mosaic</!title>
+<!date>Wed, 2 Mar 2011 19:00:00 -0500</!date>
+<!type>works</!type>
+<!description>Automatic rendering of photo mosaics</!description>
+<!include>jquery</!include>
+<!include>lightbox</!include>
+
+<p>
+	Mosaic is a program that facilitates the creation of the classic <a href="http://en.wikipedia.org/wiki/Photographic_mosaic">photo mosaic</a>, a large composition of many small photographs stitched together in such a way as to resemble a single target photograph.
+</p>
+<p>
+	The software was written in Matlab and is designed to take as input a large collection of images, and a single "target image", i.e. the photo which the mosaic should model. It works by dividing the target into a grid, and then fitting individual photographs into each "pixel" within the grid, so as to maximize the overall color similarity between source and target, using an <a href="http://www.cs.huji.ac.il/~ofirpele/FastEMD/code/">implementation</a> of <a href="http://en.wikipedia.org/wiki/Earth_mover's_distance">Earth Mover's distance</a> formula.
+</p>
+<p>
+	The full code for this project is <a href="https://github.com/genekogan/Auto-Photo-Mosaic">available on github</a>.	
+</p>
+<center>
+<p>
+	<a href="/images/mosaic/target-antigua.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_target-antigua.jpg" /></a>
+	<a href="/images/mosaic/mosaic-antigua.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_mosaic-antigua.jpg" /></a>
+</p>
+<p>
+	<a href="/images/mosaic/target-rosieondeck.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_target-rosieondeck.jpg" /></a>
+	<a href="/images/mosaic/mosaic-rosieondeck.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_mosaic-rosieondeck.jpg" /></a>
+</p>
+<p>
+	<a href="/images/mosaic/target-dilnora.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_target-dilnora.jpg" /></a>
+	<a href="/images/mosaic/mosaic-dilnora.jpg" rel="lightbox[mosaic]"><img src="/images/mosaic/thumb_mosaic-dilnora.jpg" /></a>
+</p>
+</center>

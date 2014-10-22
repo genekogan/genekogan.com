@@ -1,0 +1,34 @@
+<!title>Interference</!title>
+<!date>Fri, 6 Apr 2012 12:00:00 -0500</!date>
+<!type>works</!type>
+<!description>Creating Moire interference patterns from deltoid curves</!description>
+<!include>jquery</!include>
+<!include>lightbox</!include>
+
+<p>
+	Creating <a href="http://en.wikipedia.org/wiki/Moir%C3%A9_pattern">Moiré interference patterns</a> by iteratively tracing <a href="http://en.wikipedia.org/wiki/Deltoid_curve">Deltoid curves</a>. 
+</p>
+<p/>
+<p>
+	<a href="../images/interference/interference11.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference11.png" /></a>
+	<a href="../images/interference/interference12.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference12.png" /></a>
+	<a href="../images/interference/interference14.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference14.png" /></a>
+	<a href="../images/interference/interference15.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference15.png" /></a>
+	<a href="../images/interference/interference17.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference17.png" /></a>
+	<a href="../images/interference/interference19.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference19.png" /></a>
+	<a href="../images/interference/interference23.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference23.png" /></a>
+	<a href="../images/interference/interference24.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference24.png" /></a>
+	<a href="../images/interference/interference25.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference25.png" /></a>
+	<a href="../images/interference/interference26.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference26.png" /></a>
+	<a href="../images/interference/interference28.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference28.png" /></a>
+	<a href="../images/interference/interference30.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference30.png" /></a>
+	<a href="../images/interference/interference32.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference32.png" /></a>
+	<a href="../images/interference/interference33.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference33.png" /></a>
+	<a href="../images/interference/interference34.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference34.png" /></a>
+	<a href="../images/interference/interference39.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference39.png" /></a>
+	<a href="../images/interference/interference40.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference40.png" /></a>
+	<a href="../images/interference/interference7.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference7.png" /></a>
+	<a href="../images/interference/interference9.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference9.png" /></a>
+	<a href="../images/interference/interference10.png" rel="lightbox[int]"><img src="../images/interference/thumb_interference10.png" /></a>
+</p>
+

@@ -1,0 +1,33 @@
+<!title>Tidy photography</!title>
+<!date>Tue, 22 Feb 2011 18:00:00 -0500</!date>
+<!type>works</!type>
+<!description>Implementation of a self organizing map for "tidying up" the colors of photographs</!description>
+<!include>jquery</!include>
+<!include>lightbox</!include>
+<!include>processingjs</!include>
+
+<p>
+	Implementation of a <a href="http://en.wikipedia.org/wiki/Self_organizing_map%20">Self-organizing Map (SOM)</a> in Processing for "organizing" the colors of photographs.  Partially inspired by <a href="http://www.ted.com/talks/ursus_wehrli_tidies_up_art.html">Ursus Wehrli’s hilarious Tidy Art book</a>.  Code available <a href="http://www.openprocessing.org/sketch/65383">here</a>.
+</p>
+<p>
+	Try clicking on one of the pictures to see the flowers get tidied up.
+</p>
+	<center>
+	<canvas data-processing-sources="/code/SOM/SOM.pde /code/SOM/SelfOrganizingMap.pde"></canvas>
+	</center>
+</p>
+<p>
+	Below is a gallery of some more examples of the SOM at work.
+</p>
+<p>
+	<center>
+	<a href="/images/tidy-photography/gradAndOrig-2aurora2.jpg" rel="lightbox[tidy]"><img src="/images/tidy-photography/thumb_gradAndOrig-2aurora2.jpg" /></a>
+	<a href="/images/tidy-photography/gradAndOrig-2aurora3.jpg" rel="lightbox[tidy]"><img src="/images/tidy-photography/thumb_gradAndOrig-2aurora3.jpg" /></a>
+	<a href="/images/tidy-photography/gradAndOrig-2flower1.jpg" rel="lightbox[tidy]"><img src="/images/tidy-photography/thumb_gradAndOrig-2flower1.jpg" /></a>
+	<a href="/images/tidy-photography/gradAndOrig-2flower2.jpg" rel="lightbox[tidy]"><img src="/images/tidy-photography/thumb_gradAndOrig-2flower2.jpg" /></a>
+	<a href="/images/tidy-photography/gradAndOrig-2flower3.jpg" rel="lightbox[tidy]"><img src="/images/tidy-photography/thumb_gradAndOrig-2flower3.jpg" /></a>
+	</center>
+</p>
+<p>
+	The code is available <a href="http://genekogan.com/code/SOM/">here</a> as well as on <a href="http://www.openprocessing.org/user/19808">Open Processing</a>.  A newer version of my SOM implementation for <a href="http://www.openframeworks.cc">OpenFrameworks</a> can be found on <a href="https://github.com/genekogan/ofxSelfOrganizingMap">Github</a>.
+</p>

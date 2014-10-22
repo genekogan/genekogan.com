@@ -1,0 +1,13 @@
+<!title>Works by Gene Kogan</!title>
+<!date>Fri, 13 Jul 2012 22:00:00 -0500</!date>
+<!type>writing</!type>
+<!description>Writing</!description>
+
+<p>
+	soon
+</p>
+<p>
+	<center>
+		<img src="/images/misc/under-construction.gif"
+	</center>
+</p>

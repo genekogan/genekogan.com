@@ -1,0 +1,27 @@
+<!title>Karakoram field recordings</!title>
+<!date>Wed, 1 Sep 2010 14:00:00 -0500</!date>
+<!type>works</!type>
+<!description>A compilation of field recordings taken from Xinjiang and Hunza Valley, August 2010</!description>
+<!include>jquery</!include>
+<!include>lightbox</!include>
+
+<p>
+	<a href="../images/xinjiang-hunza/xinjiang-hunza-compilation-2.jpg" rel="lightbox[xjh]"><img src="../images/xinjiang-hunza/thumb_xinjiang-hunza-compilation-2.jpg" align="right" padding=10></a>
+	In summer of 2010 I traveled with some friends in the Karakoram highway stretching from western China, Xinjiang province, to the northern part of Pakistan in Hunza Valley. During this trip, I compiled a set of field recordings I took along the way, which later became part of <a  href="http://www.alongthekarakoram.com">Along the Karakoram</a> -- More information on this project <a href="../works/along-the-karakoram.html">can be found here</a>.
+</p>
+<p>
+	Before Along the Karakoram, I made this compilation recording.
+</p>
+<p>
+	<center>
+		<iframe width="75%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F5337614&show_artwork=true"></iframe>
+	</center>
+</p>
+<p>
+	<center>
+	<a href="../images/xinjiang-hunza/xinjiang-hunza-compilation-1.jpg" rel="lightbox[xjh]"><img src="../images/xinjiang-hunza/thumb_xinjiang-hunza-compilation-1.jpg" /></a>
+	<a href="../images/xinjiang-hunza/xinjiang-hunza-compilation-3.jpg" rel="lightbox[xjh]"><img src="../images/xinjiang-hunza/thumb_xinjiang-hunza-compilation-3.jpg" /></a>
+	<a href="../images/xinjiang-hunza/xinjiang-hunza-compilation-4.jpg" rel="lightbox[xjh]"><img src="../images/xinjiang-hunza/thumb_xinjiang-hunza-compilation-4.jpg" /></a>
+	<a href="../images/xinjiang-hunza/xinjiang-hunza-compilation-5.jpg" rel="lightbox[xjh]"><img src="../images/xinjiang-hunza/thumb_xinjiang-hunza-compilation-5.jpg" /></a>
+	</center>
+</p>

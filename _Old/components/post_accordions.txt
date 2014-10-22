@@ -1,0 +1,14 @@
+<!title>Accordions</!title>
+<!date>Tue, 6 Dec 2011 20:10:00 -0500</!date>
+<!type>works</!type>
+<!description>Simple Processing sketch generating accordions</!description>
+<!include>processingjs</!include>
+
+<p>
+	Accordions -- code for this sketch <a href="http://www.openprocessing.org/sketch/65378">here</a>.
+</p>
+<p>
+	<center>
+	<canvas data-processing-sources="/code/Accordion/Accordion.pde"></canvas>
+	</center>
+</p>

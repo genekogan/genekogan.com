@@ -1,0 +1,122 @@
+
+
+
+====================================================
+====================================================
+Kinect + physics tutorial
+
+-- P 1.5 or 2.0?
+-- cv kinect the right way?
+-- toxi the right way?
+
+
+This tutorial is going to show how to use a depth map from Kinect to interact with other objects physically, like particles falling from the sky, as in the example below. We'll be using Processing for this demo, but this recipe could be easily transported to any other environment which supports Kinect scene map and OpenCV, including OpenFrameworks and patching environments like Jitter and vvvv. 
+
+
+[ img ]
+
+<a href="">SimpleOpenNI</a> has a function that returns a sceneMap, which contains not only the depth map, but a color-differentiated image which recognizes human beings. The goal is to be able to get an array of points which specify the boundaries of the person's silhouette on the screen. Once we have that, there are many things we can do with it; one of them is having a particle system interact with the depth map, as has been done in many interactive installations before.
+
+[examples]
+
+To get the boundaries of the person on screen, we're going to combine the scene map with blob tracking from OpenCV. If you don't have them already, install <a href="">SimpleOpenNI</a> and <a href="">OpenCV</a> in your Processing libraries folder.
+
+If you haven't used blob tracking before, it will be helpful to look at the blob tracking example that comes with OpenCV. The blob tracker tries to determine the contours of objects found in a video stream. So our procedure will be to send the scene map from the Kinect to the blob tracker. We'll start by just setting up the code for outputting the scene map on the screen.
+
+//============
+import SimpleOpenNI.*;
+
+SimpleOpenNI  context;
+
+void setup() 
+{
+	// enable kinect and scene map
+	context = new SimpleOpenNI(this);
+	if(context.enableScene() == false) {
+		println("Can't open the sceneMap, maybe the camera is not connected!"); 
+		exit();
+		return;
+	}
+  
+	// we'll make the size of the screen the size of the kinect
+	size(context.sceneWidth() , context.sceneHeight()); 
+}
+
+void draw() 
+{
+	context.update();
+	image(context.sceneMap(), 0, 0);
+}
+//============
+
+That produces this output on the screen.
+
+[img scenemap]
+
+
+
+Now let's add OpenCV to our program, and create a blob tracker which will process the scene map. The only tricky thing is that opencv by default processes only a stream from a camera. But it is possible to replace that with an arbitrary PImage by using copy(). The code is updated below.
+
+
+//===========
+
+import SimpleOpenNI.*;
+import hypermedia.video.*;
+
+SimpleOpenNI context;
+OpenCV opencv;
+
+void setup() 
+{
+	// enable kinect and scene map
+	context = new SimpleOpenNI(this);
+	if(context.enableScene() == false) {
+		println("Can't open the sceneMap, maybe the camera is not connected!"); 
+		exit();
+		return;
+	}
+  
+	// we'll make the size of the screen the size of the kinect
+	size(context.sceneWidth() , context.sceneHeight()); 
+
+	// launch OpenCV and take images at same size as the scene map
+	opencv = new OpenCV( this );
+	opencv.capture(context.sceneWidth(), context.sceneHeight());
+	opencv.read();
+}
+
+void draw() 
+{
+	background(0);
+	context.update();
+
+	opencv.copy(context.sceneImage(), 
+              0, 0, context.sceneWidth(),context.sceneHeight(), 
+              0, 0, context.sceneWidth(),context.sceneHeight() );
+  
+	// Set up the blob tracker to have a minimum blob size of
+	// 1000 pixels and max size of 1/3 of the screen. The third
+	// argument is the max number of blobs. We'll do 1 for now, but 
+	// you can change this as well.
+	Blob[] blobs = opencv.blobs(1000, width*height/3, 1, true);
+	
+	// if a blob is found, let's draw the contour
+	if (blobs.length > 0) 
+	{
+		// points gives us the contour points from the first blob
+    	Point[] points = blobs[0].points;
+
+		beginShape();
+		for (int i=0; i<points.length; i++) {
+			vertex(points[i].x, points[i].y);
+	    }
+		endShape(CLOSE);
+	}
+}
+  
+
+//============
+
+A few things to note here. The arguments of the blob tracker are a size range for blobs, which will vary depending on the circumstances of your setup. In typical Kinect setup, a person's silhouette will very roughly vary between 1000 pixels or so and 1/3 the screen's pixels, so we'll use that. Additionally, we are going to set up the program to track exactly one person, so we set blobs to pick out only one prominent blob.  Minor adjustments to the code can be made to track two or more.
+
+At this point we are drawing the person's silhouette entirely from the blob contour points, rather than from the depth map. So now we have the contour in an array, and our first goal is done.  

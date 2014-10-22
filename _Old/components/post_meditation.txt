@@ -1,0 +1,13 @@
+<!title>Meditation</!title>
+<!date>Tue, 12 Oct 2010 20:00:00 -0500</!date>
+<!type>works</!type>
+<!description>An extremely time-stretched recording of Sitarist Pradeep Ratnayake</!description>
+
+<p>
+	A meditative piece featuring the extremely time-stretched sitar work of Sri Lankan sitarist <a href="http://www.pradeepratnayake.com/">Pradeep Ratnayake</a>, some chimes recorded in Ukraine, and Pushkina purring and licking a bit towards the end...
+</p>
+<p>
+	<center>
+	<iframe width="65%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F6244206&amp;auto_play=false&amp;show_artwork=true&amp;color=23521d"></iframe>
+	</center>
+</p>

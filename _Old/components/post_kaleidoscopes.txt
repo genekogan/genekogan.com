@@ -1,0 +1,14 @@
+<!title>Kaleidoscopes</!title>
+<!date>Tue, 27 Sep 2011 18:37:00 -0500</!date>
+<!type>works</!type>
+<!description>Animation + rotational symmetry</!description>
+<!include>processingjs</!include>
+
+<p>
+	Some Processing sketches playing with kaleidoscopic symmetries. The same shape -- in this case, a spiral -- is drawn many times over two nested levels of rotatational symmetry. Code available <a href="http://www.openprocessing.org/sketch/65381">here</a>.
+</p>
+<p>
+	<center>
+	<canvas data-processing-sources="/code/Kaleidoscope/Kaleidoscope.pde"></canvas>
+	</center>
+</p>

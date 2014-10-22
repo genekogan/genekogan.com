@@ -1,0 +1,31 @@
+<!title>Bezier ribbons</!title>
+<!date>Wed, 2 Mar 2011 13:00:00 -0500</!date>
+<!type>works</!type>
+<!description>Interactive bezier curves floating in space</!description>
+<!include>jquery</!include>
+<!include>lightbox</!include>
+<!include>processingjs</!include>
+
+<p>
+	Bezier ribbons is a very simple process which continuously draws a <a href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve">bezier curve</a> to the screen, whose end points and control points are randomly moving around. The below program allows you to draw four paths for each of the four points of the bezier curve, by click-dragging your mouse on it.
+</p>
+<p>
+	<center>
+	<canvas data-processing-sources="/code/BezierRibbons/BezierRibbons.pde  /code/BezierRibbons/BezierSpline.pde /code/BezierRibbons/Demo.pde /code/BezierRibbons/Menu.pde /code/BezierRibbons/NaturalCubicSpline.pde /code/BezierRibbons/Spline.pde"></canvas>
+	</center>
+</p>
+<p>
+	A <a href="http://www.flickr.com/photos/genekogan/sets/72157630481020768/">gallery</a> made from a previous iteration follows below.
+</p>
+<p>
+	<a href="/images/bezier-ribbons/bezier-ribbon1.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon1.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon2.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon2.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon3.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon3.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon4.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon4.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon5.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon5.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon6.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon6.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon7.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon7.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon8.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon8.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon9.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon9.jpg" /></a>
+	<a href="/images/bezier-ribbons/bezier-ribbon10.jpg" rel="lightbox[bez]"><img src="/images/bezier-ribbons/thumb_bezier-ribbon10.jpg" /></a>	
+</p>
