@@ -12,55 +12,57 @@ body,html {
 h1 {
 	font-size: 22px;
 }
+
 h2 {
 	font-size: 16px;
 }
 
 #container {
-	width: 1024px;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 	background: #fff;
 	padding: 16px 12px;
 }
 
-
-/*** Main container ***/
-
-#main {
-	margin-top: 24px;
-	margin-bottom: 24px;
-	line-height: 22px;	
-}
-
-#main p {
-	margin-top: 18px;
-	margin-bottom: 18px;
-}
-
-#main a, #main a:visited {
-	color: #bb22bb;
-	text-decoration: none;
-}
-
-#main a:hover {
-	color: #2244aa;
-    text-decoration: underline;
-}
-
-
-/*** Header ***/
-
-#header {
-	padding-bottom: 16px;
+#topbar {
 	border-bottom: 1px inset #AAA;
+	display: table;
+	width:100%;
+}
+
+#topbar > div {
+    display: table-cell;
 }
 
 #name {
-	margin-left: 8px;
-	padding-bottom: 8px;
+	padding-left:10px;
+}
+
+#name a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#name a:hover, #name a:active, #name .current {
+	color: #aa00aa;
+	text-decoration: none;
+}
+
+#social {
+	text-align:right;
+	padding-right:20px;
+}
+
+#social ul {
+	margin:0px;
+}
+
+#social_list li {
+    display:inline;
+	padding:0px;
 }
 
 #menucontainer {
@@ -74,15 +76,9 @@ h2 {
 
 #menudiv {
 	display: inline;
-	margin-left: 8px;
-	padding-top: 11px;
+	margin-left: 12px;
+	padding-top: 10px;
 	float: left;
-}
-
-#socialdiv {
-	display: inline;
-	margin-right: 18px;
-	float: right;
 }
 
 #menu ul {
@@ -92,7 +88,6 @@ h2 {
 #menu li {
 	display: inline;
 	margin-left: 0px;
-	padding-right: 24px;
 }
 
 #menu a {
@@ -105,31 +100,13 @@ h2 {
 	text-decoration: none;
 }
 
-#name a {
-	color: #000000;
-	text-decoration: none;
-}
-
-#name a:hover, #name a:active, #name .current {
-	color: #aa00aa;
-	text-decoration: none;
-}
-
 #menu li .current {
 	font-size: 18px;
 	pointer-events: none;
    	cursor: default;
 }
 
-#social ul {
-}
-
-#social li {
-    display: inline;
-    padding-left: 8px;
-}
-
-/*** Experiments nav bar***/
+/*** works nav bar***/
 
 #filters {
 	padding-left: 56px;
@@ -154,20 +131,14 @@ h2 {
 	font-size: 22px;
 }
 
-/*** Experiments list ***/
-
-#experiments {
-	width: 1020px;
-	margin-right: auto;
-	margin-left: auto;
-}
+/*** Works list ***/
 
 .item {
 	border: 1px solid #aaa;
 	padding: 1px;
 	width: 324px;
 	height: 240px;
-	margin: 5px;
+	margin: 3px;
 	background: #fff;
 	display: inline;
 	
@@ -176,6 +147,50 @@ h2 {
 	position:relative;
 	float:left;
 }
+
+/**** Caption *****/
+.item .caption {
+	width:324px;
+	height:242px;
+	background:#000;
+	color:#fff;
+	font-weight:bold;
+	padding:12px;
+	    
+    position:absolute;	/* fix it at the bottom */
+    left:0;
+	top:-1px;
+    display:none;  /* hide it by default */
+ 
+    /* opacity setting */
+    filter:alpha(opacity=7);    /* ie  */
+    -moz-opacity:0.7;    /* old mozilla browser like netscape  */
+    -khtml-opacity: 0.7;    /* for really really old safari */ 
+    opacity: 0.7;    /* css standard, currently it works in most modern browsers like firefox,  */ 
+}
+
+.item .caption .caption_title {
+	font-size:20px;
+}
+.item .caption .caption_meta {
+	font-size:14px;
+	margin-top:8px;
+}
+.item .caption .caption_description {
+	width:95%;
+	margin-top:24px;
+/*	background-color:#a0a;*/
+}
+
+#works img {
+    border:0;
+    position:absolute;		/* allow javascript moves the img position*/
+}
+ 
+.clear {
+    clear:both; 
+}
+
 
 /*** About page ***/
 #findgene {
@@ -196,87 +211,3 @@ h2 {
 	color: #aa00aa !important;
 	text-decoration: none;
 }
-
-
-/**** Caption *****/
-
-.item .caption {
-	width:324px;
-	height:242px;
-	background:#000;
-	color:#fff;
-	font-weight:bold;
-	padding:12px;
-	    
-    position:absolute;	/* fix it at the bottom */
-    left:0;
-	top:-1px;
-    display:none;  /* hide it by default */
- 
-    /* opacity setting */
-    filter:alpha(opacity=7);    /* ie  */
-    -moz-opacity:0.7;    /* old mozilla browser like netscape  */
-    -khtml-opacity: 0.7;    /* for really really old safari */ 
-    opacity: 0.7;    /* css standard, currently it works in most modern browsers like firefox,  */ 
-}
- 
-.item .caption p {
-    padding:5px;    
-    margin-top:16px;
-    font-size:14px;
-	line-height:180%;
-}
-
-#experiments img{
-    border:0;
-    position:absolute;		/* allow javascript moves the img position*/
-}
- 
-.clear {
-    clear:both; 
-}
-
-/*** Works (main page) ***/
-
-.worksitem {
-    width:960px;
-    height:400px;
-    padding:1px;
-    border:1px solid #364154;  
-   	font-size:22px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 24px;
-    overflow:hidden;		/* required to hide the image after resized */
-    position:relative;		/* for child absolute position */	
-}
-
-.worksitem .caption {
-    width:960px;
-    height:30px;
-    background:#000;
-    color:#fff;
-    font-weight:bold;
-    padding: 12px;
-    position:absolute;	/* fix it at the bottom */
-    left:-1px;
-	top:-1px;
-    display:none;	/* hide it by default */
- 
-    /* opacity setting */
-    filter:alpha(opacity=50);    /* ie  */
-    -moz-opacity:0.5;    /* old mozilla browser like netscape  */
-    -khtml-opacity: 0.5;    /* for really really old safari */ 
-    opacity: 0.5;    /* css standard, currently it works in most modern browsers like firefox,  */
-}
-
-#worksbanner img {
-    border:0;
-    position:absolute;		/* allow javascript moves the img position*/
-}
-
-.tott { height:425px; }
-.atk { height:410px; }
-.tr { height:400px; }
-.m { height:410px; }
-

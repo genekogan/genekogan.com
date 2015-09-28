@@ -13,59 +13,56 @@
 </head>
 <body>
 	<div id="container">
-		<div id="header">
+		<div id="topbar">
 			<div id="name">
-				<h1>Gene Kogan</h1>
+				<a href="/">← home</a>
 			</div>
-			<div id="menucontainer">
-				<div id="menudiv">
-					<ul id="menu">
-						<li><a href="/" >Works</a></li>
-						<li><a href="/code.html" >Code</a></li>
-						<li><a href="/about.html" >About</a></li>
-						<li><a href="http://electricdosa.tumblr.com" >Blog</a></li>
-					</ul>
-				</div>
-				<div id="socialdiv">
-					<ul id="social">
-						<li><a href="http://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
-						<li><a href="http://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
-						<li><a href="http://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
-						<li><a href="http://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
-						<li><a href="http://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
-					</ul>
-				</div>
+			<div id="social">
+				<ul id="social_list">
+					<li><a href="https://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+					<li><a href="https://www.instagram.com/genekogan"><img src="/images/misc/icon_instagram.png" alt="Instagram" /></a></li>
+					<li><a href="https://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
+					<li><a href="https://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
+					<li><a href="https://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
+					<li><a href="https://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
+				</ul>
 			</div>
 		</div>
+
 		<div id="main">
+			<h1>ofxLearn</h1>
 			
 			<p>
-			<a href="http://www.github.com/genekogan/ofxLearn">ofxLearn</a> is a library for <a href="http://www.openframeworks.cc/">OpenFrameworks</a> which enables general-purpose machine learning. It is designed primarily for ease of use, automating most of the gritty details of machine learning procedures, like model selection, parametrization, optimization, and training, while still providing methods to customize those details if desired. It is a high-level wrapper to the free C++ <a href="http://dlib.net/ml.html">dlib</a> machine learning toolkit. It is hosted on <a href="http://www.github.com/genekogan/ofxLearn">GitHub</a>.
+			<a href="http://www.github.com/genekogan/ofxLearn">ofxLearn</a> is an addon for <a href="http://www.openframeworks.cc/">OpenFrameworks</a> enabling general-purpose machine learning. It is designed for ease of use, automating most of the gritty details of machine learning procedures like model selection, optimization, and training, while still providing methods to customize those details if desired. It is a high-level wrapper to the free C++ <a href="http://dlib.net/ml.html">dlib</a> machine learning library.
 			</p>
 			<p>
-			The library supports both supervised and unsupervised learning, enabling applications like gesture recognition, pattern classification, computer vision and listening, and many others. Coupled with OpenFrameworks' real-time responsiveness, ofxLearn allows for the creation of intelligent interactivity inside OF apps.
+			The library supports supervised and unsupervised learning for applications like gesture recognition, pattern classification, computer vision and listening, and many others.
 			</p>
+			<!-- 
 			<p>
-			ofxLearn is a work in progress. The main initiative is to add more examples, demonstrating its features. At the moment, it ships with one supervised learning example and one unsupervised. A <a href="http://en.wikipedia.org/wiki/Supervised_learning">supervised</a> learning algorithm is trained to learn a defined task, like recognizing a gesture, or predicting a continuous value. The included example learns from a series of examples how to classify a user's mouse gesture into a set of categories.
+			ofxLearn is a work in progress. The main initiative is to add more examples, demonstrating its features. At the moment, it contains examples for both supervised and unsupervised learning. A <a href="http://en.wikipedia.org/wiki/Supervised_learning">supervised</a> learning algorithm is trained to learn a defined task, like recognizing a gesture, or predicting a continuous value. The included example learns from a series of examples how to classify a user's mouse gesture into a set of categories.
 			</p>
+			-->
 			<p>
 				<center>
 					<img src="/images/ofxLearn/ofxLearn_supervised.jpg">
 				</center>
 			</p>
+			<!-- 
 			<p>
 			In <a href="http://en.wikipedia.org/wiki/Unsupervised_learning">unsupervised</a> learning, there is no specific task or output to predict; instead, the algorithm takes unlabeled data and organizes it to identify previously unknown categories or group similar objects together. The included example clusters a set of randomly-distributed 3d points into a few categories. Such a task could be used, for example, to group similar objects together which are found from a camera feed, or identify patterns in musical melodies in real-time.
 			</p>
+			-->
 			<p>
 				<center>
 					<img src="/images/ofxLearn/ofxLearn_unsupervised.jpg">
 				</center>
 			</p>
 			<p>
-			Alongside ofxLearn is <a href="http://www.github.com/genekogan/ofxLearn">ofxSelfOrganizingMap</a>, a separate OpenFrameworks addon implementing a type of unsupervised learning algorithm called a <a href="http://en.wikipedia.org/wiki/Self-Organizing_Map">self-organizing map</a>. A self-organizing map takes a set of data points characterized by feature vectors, and reorganizes them in such a way that similar data points are placed in close proximity to each other. Like the unsupervised learning routines in ofxLearn, it is most useful for pattern identification and clustering.
+			Alongside ofxLearn is <a href="http://www.github.com/genekogan/ofxLearn">ofxSelfOrganizingMap</a>, a separate OpenFrameworks addon implementing a type of unsupervised learning algorithm called a <a href="http://en.wikipedia.org/wiki/Self-Organizing_Map">self-organizing map</a>. An SOM takes a set of data points characterized by feature vectors, and reorganizes them in such a way that similar data points are placed in close proximity. Like the unsupervised learning routines in ofxLearn, it is most useful for pattern identification and clustering.
 			</p>
 			<p>
-				The included example demonstrates the use of a self-organizing map to analyze and reorganize a set of colored pixels from an image of flowers. I also made an implementation of a self-organizing map in Processing, which was used in <a href="/works/tidy-photography.html">Tidy Photography</a> and <a href="/works/color-of-words.html">Color of Words</a>. OfxSelfOrganizingMap is also hosted on <a href="http://www.github.com/genekogan/ofxSelfOrganizingMap">GitHub</a>.
+				The included example demonstrates the use of an SOM to analyze and reorganize a set of colored pixels from an image of flowers. I also made an implementation of a self-organizing map in Processing, which was used in <a href="/works/tidy-photography.html">Tidy Photography</a> and <a href="/works/color-of-words.html">Color of Words</a>. <a href="http://www.github.com/genekogan/ofxSelfOrganizingMap">Code here</a>.
 			</p>
 			<p>
 				<center>

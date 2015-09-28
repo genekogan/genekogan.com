@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="Description" content="Works by programmer and artist, Gene Kogan" />
 	<meta name="author" content="Gene Kogan">
-	<title>Works by Gene Kogan</title>
+	<title>Gene Kogan</title>
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.genekogan.com/rss/rss2.xml" />
 	<link href="/css/style.css" rel="stylesheet" type="text/css" />
 	<link href="/css/isotope.css" rel="stylesheet" />
@@ -14,355 +14,379 @@
 	<script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
 </head>
 
-
 <body>
-	
-	<script type="text/javascript">
-	    window._idl = {};
-	    _idl.variant = "modal";
-	    _idl.campaign = "reset-the-net";
-	    (function() {
-	        var idl = document.createElement('script');
-	        idl.type = 'text/javascript';
-	        idl.async = true;
-	        idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
-	        document.getElementsByTagName('body')[0].appendChild(idl);
-	    })();
-	</script>
-	
-	
 	<div id="container">
-		<div id="header">
+		<div id="topbar">
 			<div id="name">
-				<h1>Gene Kogan</h1>
+				<a href="https://www.twitter.com/genekogan">@genekogan</a>
 			</div>
-			<div id="menucontainer">
-				<div id="menudiv">
-					<ul id="menu">
-						<li><a href="/" class="current" >Works</a></li>
-						<li><a href="/code.html" >Code</a></li>
-						<li><a href="/about.html" >About</a></li>
-						<li><a href="http://electricdosa.tumblr.com" >Blog</a></li>
-					</ul>
-				</div>
-				<div id="socialdiv">
-					<ul id="social">
-						<li><a href="http://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
-						<li><a href="http://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
-						<li><a href="http://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
-						<li><a href="http://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
-						<li><a href="http://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
-					</ul>
-				</div>
+			<div id="social">
+				<ul id="social_list">
+					<li><a href="https://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+					<li><a href="https://www.instagram.com/genekogan"><img src="/images/misc/icon_instagram.png" alt="Instagram" /></a></li>
+					<li><a href="https://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
+					<li><a href="https://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
+					<li><a href="https://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
+					<li><a href="https://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
+				</ul>
 			</div>
 		</div>
-		<div id="main">
-			
-			<p>
+		<div id="menucontainer">
+			<div id="menudiv">
 				<ul id="filters">
 				  <li><a href="#" data-filter=".projects" class="filteritem selected">projects</a></li>
-				  <li><a href="#" data-filter=".images" class="filteritem">images</a></li>
+				  <li><a href="#" data-filter=".performance" class="filteritem">performance</a></li>
+				  <li><a href="#" data-filter=".generative" class="filteritem">generative</a></li>
+				  <li><a href="#" data-filter=".learning" class="filteritem">machine-learning</a></li>
+				  <li><a href="#" data-filter=".image" class="filteritem">image</a></li>
 				  <li><a href="#" data-filter=".sound" class="filteritem">sound</a></li>
-				  <li><a href="#" data-filter=".code" class="filteritem">code</a></li>
 				  <li><a href="#" data-filter=".language" class="filteritem">language</a></li>
-				</ul>
-			</p>
-			
-			<div id="experiments">
+				  <li><a href="/about.html">about</a></li>
+				</ul>					
+			</div>
+		</div>
 				
-				<div class="item projects code">
+		<div id="main">
+			<div id="works">
+				<div class="item projects generative learning">
+					<a href="/works/style-transfer.html">
+					<img src="/images/home/thumb_style-transfer.gif" />					
+					<div class="caption">
+						<div class="caption_title">Style Transfer</div>
+						<div class="caption_meta">2015</div>
+						<div class="caption_description">Recomposing images in the style of iconic paintings</div>
+					</div></a>
+				</div>
+				<div class="item projects performance">
 					<a href="/works/machine-yearning.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_machine-yearning.mp4" />
 					</video>					
 					<div class="caption">
-						<h1>Machine Yearning</h1>
-						<p>A collaborative performance with PLOrk and an industrial robot arm</p>
-					</div></a>
+						<div class="caption_title">Machine Yearning</div>
+						<div class="caption_meta">2014 + PLOrk + Ryan Johns</div>
+						<div class="caption_description">Sonifying and projection-mapping an industrial robot arm</div>
+					</div>
+					</a>
 				</div>
-				<div class="item projects code">
+				<div class="item projects performance">
 					<a href="/works/kinect-projector-toolkit.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_kinect-projector-toolkit.mp4" />
 					</video>
-					<div class="caption">
-						<h1>Kinect Projector Toolkit</h1>
-						<p>A toolkit for automatically aligning a projector with a Kinect depth camera</p>
-					</div></a>
+					<div class="caption">						
+						<div class="caption_title">Kinect Projector Toolkit</div>
+						<div class="caption_meta">2013</div>
+						<div class="caption_description">Processing/OpenFrameworks toolkit for calibrating a Kinect and projector</div>
+					</div>
+					</a>
 				</div>
-				<div class="item projects sound">
-					<a href="/works/birl.html">
-					<img src="/images/home/thumb_birl.jpg" />
-					<div class="caption">
-						<h1>Birl</h1>
-						<p>Electronic wind instrument + training and synthesis software</p>
-					</div></a>
-				</div>
-				<div class="item projects">
+				<div class="item projects performance">
 					<a href="/works/ecohacker-build.html">
 					<img src="/images/home/thumb_ecohacker-build.jpg" />
 					<div class="caption">
-						<h1>Ecohacker Build</h1>
-						<p>A collaborative sculpture and temporary performance space constructed in the woods of upstate New York</p>
+						<div class="caption_title">Ecohacker-Build</div>
+						<div class="caption_meta">2014 + many</div>
+						<div class="caption_description">Collaborative sculpture and temporary performance space in upstate NY</div>
 					</div></a>
 				</div>				
+				<div class="item projects learning sound">
+					<a href="/works/birl.html">
+					<img src="/images/home/thumb_birl.jpg" />
+					<div class="caption">
+						<div class="caption_title">Birl</div>
+						<div class="caption_meta">2014 + Jeff Snyder</div>
+						<div class="caption_description">Physical modeling + training interface for electronic wind instrument</div>
+					</div></a>
+				</div>
 				<div class="item projects sound">
 					<a href="/works/acoustic-portraits.html">
 					<img src="/images/home/thumb_acoustic-portraits.jpg" />
 					<div class="caption">
-						<h1>Acoustic Portraits</h1>
-						<p>A study in the portraiture of sound, local musicians from Davao City, Phillipines</p>
+						<div class="caption_title">Acoustic Portraits</div>
+						<div class="caption_meta">2013 + Angely Chi</div>
+						<div class="caption_description">Sound portraiture in Davao City</div>
+					</div></a>
+				</div>
+				<div class="item projects generative">
+					<a href="/works/listening-to-the-ocean.html">
+					<img src="/images/home/thumb_seashell-fabrication.jpg" />
+					<div class="caption">
+						<div class="caption_title">Listening to the Ocean</div>
+						<div class="caption_meta">2012 + Phillip Stearns + Dan Tesene</div>
+						<div class="caption_description">Fabricating real and imagined seashells</div>
 					</div></a>
 				</div>
 				<div class="item projects sound">
 					<a href="/works/manta.html">
 					<img src="/images/home/thumb_manta.jpg" />
 					<div class="caption">
-						<h1>Manta</h1>
-						<p>Tools and applications for touch-sensitive controller</p>
+						<div class="caption_title">Manta</div>
+						<div class="caption_meta">2014 + Jeff Snyder</div>
+						<div class="caption_description">Applications + interface for touch-sensitive controller</div>
 					</div></a>
 				</div>
-				<div class="item projects sound code">
+				<div class="item projects sound">
 					<a href="/works/gestural-instruments.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_gestural-instruments.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Gestural Instruments</h1>
-						<p>A series of musical instruments controlled by Leap Motion hand tracker</p>
+						<div class="caption_title">Gestural Instruments</div>
+						<div class="caption_meta">2013</div>
+						<div class="caption_description">Hand gesture-controlled Supercollider instruments</div>
 					</div></a>
 				</div>
-				<div class="item images code">
+				<div class="item image">
 					<a href="/works/processing-shader-examples.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_processing-shader-examples.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Processing Shader Examples</h1>
-						<p>A series of examples of using GLSL shaders in Processing</p>
+						<div class="caption_title">Processing Shader Examples</div>
+						<div class="caption_meta">2013</div>
+						<div class="caption_description">A series of examples of using GLSL shaders in Processing</div>
 					</div></a>
 				</div>
-				<div class="item projects code">
-					<a href="/works/listening-to-the-ocean.html">
-					<img src="/images/home/thumb_seashell-fabrication.jpg" />
-					<div class="caption">
-						<h1>Listening to the Ocean</h1>
-						<p>A project fabricating real and imagined seashells</p>
-					</div></a>
-				</div>
-				<div class="item projects">
+				<div class="item projects performance">
 					<a href="/works/tip-of-the-tongue.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_tip-of-the-tongue.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Tip of the Tongue</h1>
-						<p>A performance piece combining dance, aerialists, cyr wheels, and live projection</p>
-					</div></a>
-				</div>				
-				<div class="item projects code">
-					<a href="/works/ofxLearn.html">
-					<img src="/images/home/thumb_ofxLearn.jpg" />
-					<div class="caption">
-						<h1>ofxLearn</h1>
-						<p>Machine learning framework for OpenFrameworks</p>
+						<div class="caption_title">Tip of the Tongue</div>
+						<div class="caption_meta">2012 + Courtney Giannone</div>
+						<div class="caption_description">Dance, aerialism, cyr wheel, + live projection</div>
 					</div></a>
 				</div>
+				<div class="item projects learning language">
+					<a href="/works/color-of-words.html">
+					<video type="video/mp4" autoplay loop>
+						<source src="/images/home/thumb_color-of-words.mp4" />
+					</video>
+					<div class="caption">
+						<div class="caption_title">Color of words</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Finding the hidden color distribution behind words, phrases, concepts</div>
+					</div></a>
+				</div>	
 				<div class="item projects">
 					<a href="/works/tennis-visualization.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_tennis-visualization.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Tennis Visualization</h1>
-						<p>Visualizing the last 30 years in professional tennis</p>
+						<div class="caption_title">Tennis Visualization</div>
+						<div class="caption_meta">2013</div>
+						<div class="caption_description">Visualizing the last 30 years in professional tennis</div>
 					</div></a>
 				</div>
-				<div class="item projects">
+				<div class="item projects performance">
 					<a href="/works/the-rub.html">
 					<img src="/images/home/thumb_the-rub.jpg" />
 					<div class="caption">
-						<h1>The Rub</h1>
-						<p>Experimental theater reimagining of Hamlet with projection</p>
+						<div class="caption_title">The Rub</div>
+						<div class="caption_meta">2012 + Nessa Norich</div>
+						<div class="caption_description">Experimental theater piece reimagining Hamlet</div>
 					</div></a>
 				</div>
-				<div class="item images code">
+				<div class="item generative image">
 					<a href="/works/flocking.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_flocking.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Flocking</h1>
-						<p>Fancy-ish 3d implementation of Craig Reynold's flocking boids algorithm</p>
+						<div class="caption_title">Flocking</div>
+						<div class="caption_meta">2012</div>
+						<div class="caption_description">Processing implementation of Craig Reynolds boids algorithm</div>
 					</div></a>
 				</div>
-				<div class="item images">
+				<div class="item generative image">
 					<a href="/works/interference.html">
 					<img src="/images/home/thumb_interference.jpg" />
 					<div class="caption">
-						<h1>Interference</h1>
-						<p>Creating Moire interference patterns from deltoid curves</p>
+						<div class="caption_title">Interference</div>
+						<div class="caption_meta">2012</div>
+						<div class="caption_description">Moire interference patterns from deltoid curves</div>
 					</div></a>
 				</div>
-				<div class="item projects language">
+				<div class="item projects generative language">
 					<a href="/works/robot-shakespeare.html">
 					<img src="/images/home/thumb_robot-shakespeare.jpg" />
 					<div class="caption">
-						<h1>Robot Shakespeare</h1>
-						<p>Training a machine to write prose in the style of Shakespeare</p>
+						<div class="caption_title">Robot Shakespeare</div>
+						<div class="caption_meta">2013</div>
+						<div class="caption_description">Tweeting Fakespeare every 15 minutes since 2013</div>
 					</div></a>
 				</div>
-				<div class="item projects language">
-					<a href="/works/color-of-words.html">
+				<div class="item projects generative image">
+					<a href="/works/mosaic.html">
+					<img src="/images/home/thumb_mosaic.jpg" />
+					<div class="caption">
+						<div class="caption_title">Mosaic</div>
+						<div class="caption_meta">2010</div>
+						<div class="caption_description">Automatic generation of photo mosaics</div>
+					</div></a>
+				</div>
+				<div class="item projects learning">
+					<a href="/works/tidy-photography.html">
 					<video type="video/mp4" autoplay loop>
-						<source src="/images/home/thumb_color-of-words.mp4" />
+						<source src="/images/home/thumb_tidy-photography.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Color of words</h1>
-						<p>Finding the hidden color distribution behind words, phrases, concepts</p>
+						<div class="caption_title">Tidy Photography</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Implementation of a self organizing map for "tidying up" the colors of photographs</div>
 					</div></a>
 				</div>
-				<div class="item images">
+				<div class="item projects learning">
+					<a href="/works/ofxLearn.html">
+					<img src="/images/home/thumb_ofxLearn.jpg" />
+					<div class="caption">
+						<div class="caption_title">ofxLearn</div>
+						<div class="caption_meta">2012</div>
+						<div class="caption_description">Machine learning framework for OpenFrameworks</div>
+					</div></a>
+				</div>
+				<div class="item generative image">
 					<a href="/works/vertex-rivers.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_vertex-rivers.mp4" />
 					</video>
 					<div class="caption">
-						<h1>Vertex rivers</h1>
-						<p>Swirling currents of paint pushed by vector fields</p>
-					</div></a>
-				</div>
-				<div class="item projects images">
-					<a href="/works/scripting-photoshop.html">
-					<img src="/images/home/thumb_scripting-photoshop.jpg" />
-					<div class="caption">
-						<h1>Scripting Photoshop</h1>
-						<p>Abstract textures from scripting Photoshop filters</p>
-					</div></a>
-				</div>
-				<div class="item images">
-					<a href="/works/tree.html">
-					<video type="video/mp4" autoplay loop>
-						<source src="/images/home/thumb_tree.mp4" />
-					</video>
-					<div class="caption">
-						<h1>Tree</h1>
-						<p>Slightly surreal rotating tree</p>
+						<div class="caption_title">Vertex rivers</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Dots over vector fields</div>
 					</div></a>
 				</div>
 				<div class="item projects sound">
 					<a href="/works/urban-incantations.html">
 					<img src="/images/home/thumb_urban-incantations.jpg" />
 					<div class="caption">
-						<h1>Urban Incantations</h1>
-						<p>A compilation of field recordings taken from temples, mosques, and churches in and around Bangalore</p>
+						<div class="caption_title">Urban Incantations</div>
+						<div class="caption_meta">2012 + Sharath Chandra Ram</div>
+						<div class="caption_description">Field recordings of temples, mosques, and churches in Bangalore</div>
+					</div></a>
+				</div>
+				<div class="item projects generative">
+					<a href="/works/scripting-photoshop.html">
+					<img src="/images/home/thumb_scripting-photoshop.jpg" />
+					<div class="caption">
+						<div class="caption_title">Scripting Photoshop</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Scripting photoshop filters + generating textures</div>
+					</div></a>
+				</div>
+				<div class="item generative image">
+					<a href="/works/tree.html">
+					<video type="video/mp4" autoplay loop>
+						<source src="/images/home/thumb_tree.mp4" />
+					</video>
+					<div class="caption">
+						<div class="caption_title">Tree</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Magic tree</div>
+					</div></a>
+				</div>
+				<div class="item generative language">
+					<a href="/works/lost-in-translation.html">
+					<img src="/images/home/thumb_lost-in-translation.jpg" />
+					<div class="caption">
+						<div class="caption_title">Lost in translation</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Language translation feedback loops and their artifacts</div>
 					</div></a>
 				</div>
 				<div class="item sound">
 					<a href="/works/along-the-karakoram.html">
 					<img src="/images/home/thumb_along-the-karakoram.jpg" />
 					<div class="caption">
-						<h1>Along the Karakoram</h1>
-						<p>Field recording and photography compilation from the Karakoram Highway</p>
+						<div class="caption_title">Along the Karakoram</div>
+						<div class="caption_meta">2010</div>
+						<div class="caption_description">Field recording and photography compilation from the Karakoram Highway</div>
 					</div></a>
 				</div>
-				<div class="item projects code">
-					<a href="/works/mosaic.html">
-					<img src="/images/home/thumb_mosaic.jpg" />
-					<div class="caption">
-						<h1>Mosaic</h1>
-						<p>Automatic generation of photo mosaics</p>
-					</div></a>
-				</div>
-				<div class="item images">
+				<div class="item generative image">
 					<a href="/works/stars.html">
 					<img src="/images/home/thumb_stars.jpg" />
 					<div class="caption">
-						<h1>Stars</h1>
-						<p>Generative strategies for sketching stars</p>
-					</div></a>
-				</div>
-				<div class="item projects code">
-					<a href="/works/tidy-photography.html">
-					<video type="video/mp4" autoplay loop>
-						<source src="/images/home/thumb_tidy-photography.mp4" />
-					</video>
-					<div class="caption">
-						<h1>Tidy Photography</h1>
-						<p>Implementation of a self organizing map for "tidying up" the colors of photographs</p>
-					</div></a>
-				</div>
-				<div class="item language">
-					<a href="/works/lost-in-translation.html">
-					<img src="/images/home/thumb_lost-in-translation.jpg" />
-					<div class="caption">
-						<h1>Lost in translation</h1>
-						<p>Massive language translation feedback loops and their artifacts</p>
+						<div class="caption_title">Stars</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Generative strategies for sketching stars</div>
 					</div></a>
 				</div>
 				<div class="item sound">
 					<a href="/works/audio-sculpture.html">
 					<img src="/images/home/thumb_audio-sculpture.jpg" />
 					<div class="caption">
-						<h1>Audio sculpture</h1>
-						<p>Fabricating sculptures of music spectrograms</p>
+						<div class="caption_title">Spectrogram sculpture</div>
+						<div class="caption_meta">2012</div>
+						<div class="caption_description">Fabricating sculptures of music spectrograms</div>
 					</div></a>
 				</div>
-				<div class="item images">
+				<div class="item image">
 					<a href="/works/bezier-ribbons.html">
 					<img src="/images/home/thumb_bezier-ribbons.jpg" />
 					<div class="caption">
-						<h1>Bezier ribbons</h1>
-						<p>Interactive bezier curves floating in space</p>
+						<div class="caption_title">Bezier ribbons</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Interactive bezier curves floating in space</div>
 					</div></a>
 				</div>
 				<div class="item sound">
 					<a href="/works/meditation.html">
 					<img src="/images/home/thumb_meditation.jpg" />
 					<div class="caption">
-						<h1>Meditation</h1>
-						<p>An extremely time-stretched recording of Sitarist Pradeep Ratnayake</p>
+						<div class="caption_title">Meditation</div>
+						<div class="caption_meta">2010 + Pradeep Ratnayake</div>
+						<div class="caption_description">Time-stretched sitar</div>
 					</div></a>
 				</div>
 				<div class="item sound">
 					<a href="/works/sonic-self-portrait.html">
 					<img src="/images/home/thumb_sonic-self-portrait.jpg" />
 					<div class="caption">
-						<h1>Sonic Self Portrait</h1>
-						<p>Sonifying my face</p>
+						<div class="caption_title">Sonic Self Portrait</div>
+						<div class="caption_meta">2010</div>
+						<div class="caption_description">Sonifying my face</div>
 					</div></a>
 				</div>
-				<div class="item images">
+				<div class="item image">
 					<a href="/works/a-day-in-new-york.html">
 					<video type="video/mp4" autoplay loop>
 						<source src="/images/home/thumb_a-day-in-new-york.mp4" />
 					</video>
 					<div class="caption">
-						<h1>A Day in New York</h1>
-						<p>A timelapse of Central Park from my living room window</p>
+						<div class="caption_title">A Day in New York</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Timelapse of Central Park</div>
 					</div></a>
 				</div>
 				<div class="item sound">
 					<a href="/works/printer-remixed.html">
 					<img src="/images/home/thumb_printer-remixed.jpg" />
 					<div class="caption">
-						<h1>Printer remix</h1>
-						<p>Remixing my parents' HP Photosmart Plus</p>
+						<div class="caption_title">Printer remix</div>
+						<div class="caption_meta">2012</div>
+						<div class="caption_description">Remixing an HP Photosmart Plus</div>
 					</div></a>
 				</div>
-				<div class="item images">
+				<div class="item image">
 					<a href="/works/accordions.html">
 					<img src="/images/home/thumb_accordion.jpg" />
 					<div class="caption">
-						<h1>Accordions</h1>
+						<div class="caption_title">Accordions</div>
+						<div class="caption_meta">2011</div>
+						<div class="caption_description">Generative accordions</div>
 					</div></a>
 				</div>
 				<div class="item sound">
 					<a href="/works/pop-chemistry.html">
 					<img src="/images/home/thumb_pop-chemistry.jpg" />
 					<div class="caption">
-						<h1>Pop Chemistry</h1>
-						<p>Beat-slicing pop music tracks via EchoNest Remix</p>
+						<div class="caption_title">Pop Chemistry</div>
+						<div class="caption_meta">2010</div>
+						<div class="caption_description">Beat-slicing pop music tracks with EchoNest Remix</div>
 					</div></a>
 				</div>
 
@@ -376,7 +400,7 @@
 			
 			<script type="text/javascript">
 				// isotope script
-				var $container = $('#experiments');
+				var $container = $('#works');
 				$container.isotope({
 				  itemSelector : '.item',
 				  layoutMode : 'fitRows',

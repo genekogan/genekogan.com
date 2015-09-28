@@ -6,12 +6,34 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="Description" content="Works by programmer and artist, Gene Kogan" />
 	<meta name="author" content="Gene Kogan">
-	<title>Works by Gene Kogan</title>
+	<title>Code | Gene Kogan</title>
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.genekogan.com/rss/rss2.xml" />
 	<link href="/css/style.css" rel="stylesheet" type="text/css" />
 	<link href="/css/isotope.css" rel="stylesheet" />
 	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
+	
+	<style>
+	
+		#code_container {
+			width:95%;
+			margin: 0 auto;
+			margin-bottom:24px;
+		}
+		.code_entry {
+			padding:8px;
+			margin-bottom: 4px;
+			float: left;
+			clear: none;
+			width:100%;
+			border-bottom: 1px inset #AAA;
+		}
+		.code_icon {
+			padding-right:12px;
+			float: left;
+		}	
+	</style>
+	
 </head>
 
 
@@ -48,6 +70,7 @@
 				<div id="socialdiv">
 					<ul id="social">
 						<li><a href="http://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+						<li><a href="http://www.instagram.com/genekogan"><img src="/images/misc/icon_instagram.png" alt="Instagram" /></a></li>
 						<li><a href="http://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
 						<li><a href="http://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
 						<li><a href="http://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
@@ -58,33 +81,139 @@
 		</div>
 		<div id="main">
 			
-			Code 
 			<p>
-				section is under construction... check back in a bit
-			</p>
-			<!--
-			<br/>ofxLearn
-			<br/>tools and templates
-			<br/>supercollider-leap instruments
-			<br/>ofxaddons
-			<br/>LearnOSC
-			<br/>self organizing map
-			<br/>Manta
-			<br/>Birl
-			<br/>OpenProcessing + flocking
-			<br/>mosaic
-			<br/>kinect projector toolkit
-			<br/>addons: sequencer, touchosc, spreadsheet, convexhull, leapmotion2, screengrab, second window, point in polyline, controlosc
-			<br/>wifi geolocation
-			<br/>seashell generator
-			<br/>robot shakespeare
-			<br/>shader examples
-			<br/>logger
-			//-->
+				<div id="code_container">
 
-			
+					<div class="code_entry">
+						<div class="code_icon"><a href="http://www.github.com/genekogan/ofxLearn"><image src="/images/code/ofxLearn.jpg" /></a></div>
+						<div class="code_description">
+							<a href="http://www.github.com/genekogan/ofxLearn">ofxLearn</a>
+							<br/>OpenFrameworks addon for machine learning, supporting classification, regression, and clustering.
+						</div>
+					</div>
+
+					<!--
+					<div class="code_entry">
+						<div class="code_icon"><a href="http://www.github.com/genekogan/ofxLearn"><image src="/images/code/ofxLearn.jpg" /></a></div>
+						<div class="code_description">
+							<a href="http://www.github.com/genekogan/ofxLearn">LearnOSC</a>
+							<br/>In-progress development of a high-level standalone tool based on ofxLearn for real-time learning and mapping parameters.
+						</div>
+					</div>
+					//-->
+					
+					<div class="code_entry">
+						<div class="code_icon"><a href="http://www.github.com/genekogan/ofxKinectProjectorToolkit"><image src="/images/code/kinect-projector-toolkit.jpg" /></a></div>
+						<div class="code_description">
+							<a href="http://www.github.com/genekogan/ofxKinectProjectorToolkit">Kinect Projector Toolkit</a>
+							<br/>Calibration tool for alignment of a kinect depth camera to a projector, available for both <a href="http://www.github.com/genekogan/KinectProjectorToolkit">Processing</a> and <a href="http://www.github.com/genekogan/ofxKinectProjectorToolkit">OpenFrameworks</a>.
+						</div>
+					</div>
+					
+					<div class="code_entry">
+						<div class="code_icon"><a href="http://www.github.com/genekogan/ofxSelfOrganizingMap"><image src="/images/code/self-organizing-map.jpg" /></a></div>
+						<div class="code_description">
+							<a href="http://www.github.com/genekogan/ofxSelfOrganizingMap">ofxSelfOrganizingMap</a>
+							<br/>An implementation of a <a href="http://en.wikipedia.org/wiki/Self-organizing_map">self-organizing map</a>, a machine learning algorithm for organizing and clustering data.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/OF-tools-and-templates"><image src="/images/code/of-tools-and-templates.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/OF-tools-and-templates">OF tools and templates</a>
+							<br/>High-level tools for OpenFrameworks which I use in my works, and accompanying templates. 
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/Birl"><image src="/images/code/birl.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/Birl">Birl</a>
+							<br/>User interface for training sensor data to audio parameters for the <a href="http://snyderphonics.com">Birl</a>, an electronic wind instrument.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/Manta"><image src="/images/code/manta.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/Manta">Manta</a>
+							<br/>OSC/Midi Interface and training software for the <a href="http://snyderphonics.com/products.htm">Manta</a>, a touch-sensitive controller.
+						</div>
+					</div>
+					
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/processing-shader-examples"><image src="/images/code/processing-shader-examples.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/processing-shader-examples">Processing shader examples</a>
+							<br/>A collection of texture and color shaders for Processing.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/LeapMotion-SuperCollider-Instruments"><image src="/images/code/gestural-instruments.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/LeapMotion-SuperCollider-Instruments">Gestural Instruments</a>
+							<br/>A collection of <a href="http://supercollider.sourceforge.net">SuperCollider</a> synths controlled by a Leap Motion.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/RobotShakespeare"><image src="/images/code/robot-shakespeare.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/RobotShakespeare">Robot Shakespeare</a>
+							<br/>Python software for <a href="http://twitter.com/robotshakespear">Robot Shakespeare</a>, a bot which tweets pseudo-Shakespearean prose, built on top of <a href="http://www.nltk.org/">NLTK</a> natural language processing library.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/Logger"><image src="/images/code/logger.png" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/Logger">Logger</a>
+							<br/>Locally-hosted electronic journal and todo-list software built on top of <a href="https://www.meteor.com/">Meteor</a>.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="https://github.com/genekogan/Auto-Photo-Mosaic"><image src="/images/code/mosaic.jpg" /></a></div>
+						<div class="code_description">
+							<a href="https://github.com/genekogan/Auto-Photo-Mosaic">Mosaic</a>
+							<br/>Matlab code for automatic generation of photo mosaics from a corpus of photographs.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="http://www.openprocessing.org/user/19808"><image src="/images/code/open-processing.jpg" /></a></div>
+						<div class="code_description">
+							<a href="http://www.openprocessing.org/user/19808">OpenProcessing</a>
+							<br/>Collection of <a href="http://www.processing.org">Processing</a> sketches hosted on OpenProcessing.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><a href="http://www.ofxaddons.com"><image src="/images/code/ofxaddons.png" /></a></div>
+						<div class="code_description">
+							<a href="http://www.ofxaddons.com">ofxAddons</a>
+							<br/>Maintaining libraries page and <a href="http://www.twitter.com/ofxaddons">tweeting</a> new addons for <a href="http://www.openframeworks.cc">OpenFrameworks</a>.
+						</div>
+					</div>
+
+					<div class="code_entry">
+						<div class="code_icon"><image src="/images/code/control-tools.png" /></div>
+						<div class="code_description">
+							Libraries for interfacing with variables and data in OpenFrameworks:
+					<br/><a href="http://www.github.com/genekogan/ofxSequencer">ofxSequencer</a> - continuous-valued sequencer
+					<br/><a href="http://www.github.com/genekogan/ofxTouchOsc">ofxTouchOsc</a> - automatic generation of <a href="http://hexler.net/software/touchosc">TouchOsc</a> layouts
+					<br/><a href="http://www.github.com/genekogan/ofxSpreadsheet">ofxSpreadsheet</a> - Embedded spreadsheet editor for interfacing with datasets
+						</div>
+					</div>
+					
+				</div>
+
+			</p>			
 		</div>
 	</div>
+	
 
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
