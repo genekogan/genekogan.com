@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Description" content="Learning to generate text and audio sequences with LSTMs" />
+	<meta name="author" content="Gene Kogan">
+	<title>Learning to generate text and audio | Gene Kogan</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.genekogan.com/rss/rss2.xml" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/lightbox.css" rel="stylesheet" />
+	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="/js/lightbox.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="topbar">
+			<div id="name">
+				<a href="/">← home</a>
+			</div>
+			<div id="social">
+				<ul id="social_list">
+					<li><a href="https://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+					<li><a href="https://www.instagram.com/genekogan"><img src="/images/misc/icon_instagram.png" alt="Instagram" /></a></li>
+					<li><a href="https://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
+					<li><a href="https://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
+					<li><a href="https://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
+					<li><a href="https://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			<h1>Learning to generate text and audio</h1>
+			
+			<p>
+				Advances in techniques for predicting sequence elements have improved our ability to create generative sequences in various styles. The following are text and audio sequences generated using <a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Long Short Term Memory (LSTM)</a> neural networks in the style of various source texts and audio samples. 
+			</p>
+			
+			<p>
+				I used the char-rnn technique <a href="https://karpathy.github.io/2015/05/21/rnn-effectiveness/">first described</a> and <a href="https://github.com/karpathy/char-rnn">implemented</a> by Andrej Karpathy</a> and re-implemented in <a href="https://github.com/pfnet/chainer">Chainer</a> by <a href="https://github.com/yusuketomoto/chainer-char-rnn">Yusuke Tomoto<a/> to create some text sequences trained on various corpora.
+			</p>
+			
+			<center>
+			<p>
+				Book of Genesis
+				<br/>
+				<img src="/images/learning-sequences/genesis.jpg" />
+			</p>
+			<p>
+				State of the union addresses by George W. Bush, 2001-2008
+				<br/>
+				<img src="/images/learning-sequences/gwbush.jpg" />
+			</p>
+			<p>
+				War & Peace by Leo Tolstoy
+				<br/>
+				<img src="/images/learning-sequences/warandpeace.jpg" />
+			</p>
+			</center>
+			
+			<p>
+				Some more personal texts were generated trained on <a href="https://twitter.com/genekogan/status/631147300996444160">my Gmail</a> and on <a href="https://twitter.com/genekogan/status/630843297615978496">my personal journal</a>.
+			</p>
+
+			<p>
+				I also produced audio with <a href="https://github.com/MattVitelli/GRUV">Matt Vitelli's GRUV library</a> which trains a <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">recurrent neural network</a> on music to produce new samples of audio in the style of the source audio. Some novel and promising results, but overfitting is evident, with fragments from the source audio being audible in the outputs. More work needs to be done in this area. Some of the outputs:
+			</p>
+			
+			<center>
+				
+				<p>
+					John Coltrane -- Blue Train
+				</p>
+				<p>
+					<iframe width="60%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219255494&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</p>
+				
+				<p>
+					Frédéric Chopin -- Nocturnes
+				</p>
+				<p>
+					<iframe width="60%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219782465&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</p>
+				
+				<p>
+					Vibraphone sample
+				</p>
+				<p>
+					<iframe width="60%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/219784219&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</p>
+				
+			</center>
+			
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-33352395-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>

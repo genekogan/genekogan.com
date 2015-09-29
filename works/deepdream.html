@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Description" content="Deepdream prototypes" />
+	<meta name="author" content="Gene Kogan">
+	<title>Deepdream prototypes | Gene Kogan</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.genekogan.com/rss/rss2.xml" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/lightbox.css" rel="stylesheet" />
+	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="/js/lightbox.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="topbar">
+			<div id="name">
+				<a href="/">← home</a>
+			</div>
+			<div id="social">
+				<ul id="social_list">
+					<li><a href="https://www.twitter.com/genekogan"><img src="/images/misc/icon_twitter.png" alt="Twitter" /></a></li>
+					<li><a href="https://www.instagram.com/genekogan"><img src="/images/misc/icon_instagram.png" alt="Instagram" /></a></li>
+					<li><a href="https://www.vimeo.com/genekogan"><img src="/images/misc/icon_vimeo.png" alt="Vimeo" /></a></li>
+					<li><a href="https://www.flickr.com/photos/genekogan/"><img src="/images/misc/icon_flickr.png" alt="Flickr" /></a></li>
+					<li><a href="https://www.soundcloud.com/genekogan"><img src="/images/misc/icon_soundcloud.png" alt="SoundCloud" /></a></li>
+					<li><a href="https://www.github.com/genekogan"><img src="/images/misc/icon_github.png" alt="GitHub" /></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			<h1>Deepdream prototypes</h1>
+			
+			<p>
+				A series of images produced using <a href="http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html">Google's inceptionism/deepdream</a> code released in July 2015. The software uses <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">artificial neural networks</a> trained on large sets of classified images used by Google for image recognition. The <a href="https://github.com/google/deepdream">code</a> accepts images as inputs and iteratively evolves the pixel values towards some coherent resemblance to the image classes it knows, producing wild images of "pig-snails," "camel-birds," "dog-fish," and the famous "puppy slugs," among many other categories.
+			</p>
+			
+			<p>
+				I was able to get interesting animations by iteratively zooming into the output and oscillating which of the layers to enhance in the network.
+			</p>
+
+			<center>
+			
+			<p>
+			<video type="video/mp4" autoplay loop>
+				<source src="/images/deepdream/deepzoom.mp4" />
+			</video>					
+			
+			<video type="video/mp4" autoplay loop>
+				<source src="/images/deepdream/deep-prototypes.mov" />
+			</video>
+								
+			</p>
+
+			<p>
+				Enhancing different layers (like 'inception_3a/relu_5x5_reduce') let me find some of the lesser-seen classes like these chalice-like bowls.
+			</p>
+			<p>
+				<img src="/images/deepdream/bowls.jpg" />
+			</p>
+			<p>
+				
+				A <a href="https://www.flickr.com/photos/genekogan/albums/72157655463879190">gallery</a> of images including paintings by Da Vinci, Klimt, Monet, Schiele, and Picasso, photos of Bagan, Lake Indawgyi, and Shwedagon Pagoda in Burma/Myanmar, Jaaga in Bangalore, and some fireworks.
+			</p>
+				
+			<p>
+				<a href="/images/deepdream/davinci.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_davinci.jpg" /></a>
+				<a href="/images/deepdream/monet1.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_monet1.jpg" /></a>
+				<a href="/images/deepdream/picasso.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_picasso.jpg" /></a>
+				<a href="/images/deepdream/schiele.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_schiele.jpg" /></a>
+				<a href="/images/deepdream/klimt.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_klimt.jpg" /></a>
+				<a href="/images/deepdream/ganesh1.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_ganesh1.jpg" /></a>
+				<a href="/images/deepdream/ganesh2.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_ganesh2.jpg" /></a>
+				<a href="/images/deepdream/cappucinno.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_cappucinno.jpg" /></a>
+				<a href="/images/deepdream/fireworks1.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_fireworks1.jpg" /></a>
+				<a href="/images/deepdream/fireworks2.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_fireworks2.jpg" /></a>
+				<a href="/images/deepdream/indawgyi_sunset.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_indawgyi_sunset.jpg" /></a>
+				<a href="/images/deepdream/indawgyi.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_indawgyi.jpg" /></a>
+				<a href="/images/deepdream/jaaga.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_jaaga.jpg" /></a>
+				<a href="/images/deepdream/bagan.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_bagan.jpg" /></a>
+				<a href="/images/deepdream/shwedagon1.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_shwedagon1.jpg" /></a>
+				<a href="/images/deepdream/shwedagon2.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_shwedagon2.jpg" /></a>
+				<a href="/images/deepdream/mamoru.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_mamoru.jpg" /></a>
+				<a href="/images/deepdream/rio.jpg" rel="lightbox[dd]"><img src="/images/deepdream/thumb_rio.jpg" /></a>
+			</p>
+			
+			</center>
+			
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-33352395-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</body>
+</html>
