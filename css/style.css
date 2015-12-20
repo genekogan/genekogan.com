@@ -24,13 +24,19 @@ h2 {
 	margin-top: 0px;
 	margin-bottom: 20px;
 	background: #fff;
-	padding: 16px 12px;
+	padding: 10px 5px;
 }
 
 #topbar {
 	border-bottom: 1px inset #AAA;
 	display: table;
 	width:100%;
+	padding-bottom:2px;
+}
+
+#topbar a:link, #topbar a:visited, #topbar a:hover, #topbar a:active {
+	text-decoration:none;
+	border-bottom: none;
 }
 
 #topbar > div {
@@ -41,12 +47,12 @@ h2 {
 	padding-left:10px;
 }
 
-#name a {
+#name a, #social_list a {
 	color: #000000;
 	text-decoration: none;
 }
 
-#name a:hover, #name a:active, #name .current {
+#name a:hover, #name a:active, #name .current, #social_list a:hover, #social_list a:active, #social_list .current {
 	color: #aa00aa;
 	text-decoration: none;
 }
@@ -67,6 +73,7 @@ h2 {
 
 #menucontainer {
 	overflow: hidden;
+	padding-bottom:5px;
 }
 
 #menucontainer ul, li { 
@@ -77,7 +84,7 @@ h2 {
 #menudiv {
 	display: inline;
 	margin-left: 12px;
-	padding-top: 10px;
+	padding-top: 5px;
 	float: left;
 }
 
@@ -138,8 +145,6 @@ h2 {
 /*** Works list ***/
 
 .item {
-	border: 1px solid #aaa;
-	padding: 1px;
 	width: 324px;
 	height: 240px;
 	margin: 3px;
